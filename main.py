@@ -85,9 +85,12 @@ with smtplib.SMTP("smtp.mailersend.net", 587) as server:
 
     for recipient in recipients:
         msg = MIMEMultipart()
-        msg["From"] = f"VinodKumarNathi <{SENDER_EMAIL}>"
+        
+        msg["From"] = "VinodKumarNathi <{}>".format(SENDER_EMAIL.strip())
+
         msg["To"] = recipient
         msg["Subject"] = subject
         msg.attach(MIMEText(body, "plain", "utf-8"))
+
 
         server.sendmail(SENDER_EMAIL, recipient, msg.as_string())
