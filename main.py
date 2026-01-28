@@ -45,21 +45,21 @@ with open("index.txt", "w") as f:
 
 recipients = [
     "nathivinodkumar23@gmail.com",
-    "nathivinodkumar0230@gmail.com",
-    "jenigavinay973@gmail.com",
-    "pavaninaik2k5@gmail.com",
-    "shivachaturvedi145@gmail.com",
-    "nagoluhemanthreddy@gmail.com",
-    "chinnasaketh2@gmail.com",
-    "saicharankasarapu2004@gmail.com",
+    # "nathivinodkumar0230@gmail.com",
+    # "jenigavinay973@gmail.com",
+    # "pavaninaik2k5@gmail.com",
+    # "shivachaturvedi145@gmail.com",
+    # "nagoluhemanthreddy@gmail.com",
+    # "chinnasaketh2@gmail.com",
+    # "saicharankasarapu2004@gmail.com",
     "yvignesh20@gmail.com",
-    "siddubhukya725@gmail.com",
-    "prashanthreddy3748@gmail.com",
-    "boyavishnu86@gmail.com",
-    "anithakatravath53@gmail.com",
-    "nithinmalavath3233@gmail.com",
-    "ruthikeswar21@gmail.com",
-    "sandeepkumarpittala7@gmail.com",
+    # "siddubhukya725@gmail.com",
+    # "prashanthreddy3748@gmail.com",
+    # "boyavishnu86@gmail.com",
+    # "anithakatravath53@gmail.com",
+    # "nithinmalavath3233@gmail.com",
+    # "ruthikeswar21@gmail.com",
+    # "sandeepkumarpittala7@gmail.com",
 ]
 
 # ---------------- EMAIL CONTENT ----------------
@@ -94,3 +94,4 @@ with smtplib.SMTP("smtp.mailersend.net", 587) as server:
 
 
         server.sendmail(SENDER_EMAIL, recipient, msg.as_string())
+
