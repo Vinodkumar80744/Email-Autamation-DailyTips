@@ -95,3 +95,4 @@ with smtplib.SMTP("smtp.mailersend.net", 587) as server:
 
         server.sendmail(SENDER_EMAIL, recipient, msg.as_string())
 
+
